@@ -1,15 +1,50 @@
+* {
+  scrollbar-color: #202324 #454a4d;
+}
+
 .List {
-  width: 37%;
+  padding: 10px;
+  position: relative;
+  max-height: calc(100vh - 45px - 75px);
+  height: calc(100vh - 45px - 75px);
+  overflow-y: scroll;
+
+  width: 330px;
+  height: calc(100vh - 75px);
+  font-size: 16px;
+  background-color: #181a1b;
+  border-right: 1px solid #eeeeef;
+  text-align: left;
 }
 
 header {
-  
+  height: 45px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  background-color: rgb(24, 26, 27);
 }
 
 ul {
   padding: 0;
   text-align: left;
 }
+
+button {
+  background-color: transparent;
+  border-color: initial;
+  border: none;
+  cursor: pointer;
+  color: #e8e6e3;
+
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+}
+

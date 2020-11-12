@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import STORE from '../List/store';
+// import STORE from '../List/store';
 import './Participant.css'
 
 class Participant extends Component {

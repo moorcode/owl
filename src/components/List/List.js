@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Participant from '../Participant/Participant';
 import STORE from './store';
 
-import { FaQuestionCircle } from 'react-icons/fa';
-import { FaCog } from 'react-icons/fa';
+import { FaLink, FaQuestionCircle, FaCog } from 'react-icons/fa';
 import './List.css'
 
 class List extends Component {
@@ -18,10 +17,10 @@ class List extends Component {
       <section className='List'>
         <header>
           <p>Chat</p>
-          <p>Participants ()</p>
-          <FaCog />
-          <i class="fas fa-link"></i>
-          <FaQuestionCircle />
+          <p>Participants ( 5 )</p>
+          <button><FaCog /></button>
+          <button><FaLink /></button>
+          <button><FaQuestionCircle /></button>
         </header>
         <ul>
           {ParticipantArray}

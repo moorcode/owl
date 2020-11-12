@@ -1,34 +1,39 @@
-import React, { Component } from 'react';
-import List from '../List/List';
+import React, { Component } from "react";
+import List from "../List/List";
 // import Stage from '../Stage/Stage';
 // import Chat from '../Chat/Chat';
 // import STORE from '../List/store';
-import { FaChevronLeft } from 'react-icons/fa';
-import { FaThumbsUp } from 'react-icons/fa';
-import { FaThumbsDown } from 'react-icons/fa';
-import { FaRegHandPaper } from 'react-icons/fa';
-import { FaHands } from 'react-icons/fa';
-import { FaPhone } from 'react-icons/fa';
-import './App.css';
+import {
+  FaChevronLeft,
+  FaThumbsUp,
+  FaThumbsDown,
+  FaRegHandPaper,
+  FaHands,
+  FaComment,
+  FaPhone,
+} from "react-icons/fa";
+
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <main className="App">
+      <main className='App'>
         <List />
-       
+
         <footer>
-          <div className='chatControls'>
-          <FaChevronLeft />
-          <FaThumbsUp />
-          <FaThumbsDown />
-          <FaRegHandPaper />
-          <FaHands />
+          <div className='control-bar-left'>
+          <button><FaChevronLeft /></button>
+          <button><FaThumbsUp /></button>
+          <button><FaThumbsDown /></button>
+          <button><FaRegHandPaper /></button>
+          <button><FaHands /></button>
           </div>
-         
-          <i class="fas fa-ellipsis-h"></i>
-          <FaPhone />
+          <div className='control-bar-right'>
+          <button><FaComment /></button>
+          <button><FaPhone /></button>
           <button>Join stage</button>
+          </div>
         </footer>
       </main>
     );

@@ -1,19 +1,46 @@
+* {
+  box-sizing: border-box;
+  scrollbar-color: #202324 #454a4d;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: block;
+  background-color: rgb(24, 26, 27);
+  color: rgb(186, 180, 171);
+
+  font-family: Proxima Nova W01,Avenir Next W01,Avenir Next,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.875;
+
+}
 
 footer {
+  height: 75px;
   display: flex;
   justify-content: space-between;
+  background-color: rgb(24, 26, 27);
+  border-top: 1px solid #eeeeef;
   
 }
 
-.chatControls {
-  height: 150px;
+.control-bar-left {
   width: 20%;
-  padding-right: 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 } 
 
+.control-bar-right {
+  width: 20%;
+  display: flex;
+  align-items: center; 
+  
+} 
+
 button {
-  height: 30px;
-  width: 90px;
+  width: 120px;
 }
