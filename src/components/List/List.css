@@ -1,0 +1,15 @@
+.List {
+  width: 37%;
+}
+
+header {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  text-align: left;
+}
