@@ -7,20 +7,20 @@ import './List.css'
 
 class List extends Component {
   render() {
-    const ParticipantArray = STORE.map((item) => 
+    const ParticipantArray = STORE.map((item) =>
+     
     <Participant 
-      avatar={STORE.avatar}
-      name={STORE.name}
-      inSession={STORE.inSession}
-      onStage={STORE.onStage} /> )
+      avatar={item.avatar}
+      name={item.name}
+      status={item.inSession ? 'in session' : 'on stage'} /> )
     return (
       <section className='List'>
         <header>
-          <p>Chat</p>
-          <p>Participants ( 5 )</p>
-          <button><FaCog /></button>
-          <button><FaLink /></button>
-          <button><FaQuestionCircle /></button>
+          <button className='view-button'>Chat</button>
+          <button className='view-button'>Participants ( 5 )</button>
+          <button className='control-button'><FaCog /></button>
+          <button className='control-button'><FaLink /></button>
+          <button className='control-button'><FaQuestionCircle /></button>
         </header>
         <ul>
           {ParticipantArray}

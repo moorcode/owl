@@ -8,7 +8,7 @@ class Participant extends Component {
       <li>
         <img alt='avatar' src={this.props.avatar} />
         <p>{this.props.name}</p>
-        
+        <p className='status'>{this.props.status}</p>
       </li>)
   }
 }
